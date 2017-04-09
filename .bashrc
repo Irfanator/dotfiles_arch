@@ -78,16 +78,16 @@ shopt -s checkwinsize
 #esac
 
 # enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    #alias grep='grep --color=auto'
-    #alias fgrep='fgrep --color=auto'
-    #alias egrep='egrep --color=auto'
-fi
+#if [ -x /usr/bin/dircolors ]; then
+#    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+#    alias ls='ls --color=auto'
+#    alias dir='dir --color=auto'
+#    alias vdir='vdir --color=auto'
+#
+#    alias grep='grep --color=auto'
+#    alias fgrep='fgrep --color=auto'
+#    alias egrep='egrep --color=auto'
+#fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
@@ -102,22 +102,19 @@ fi
 
 
 ## Ipan was here
-
-alias arps-w='sudo arp-scan --interface=wlan0 --localnet'
-alias arps-e='sudo arp-scan --interface=eth0 --localnet'
 alias listenlinein='pactl load-module module-loopback'
 alias mutelinelin='pactl unload-module module-loopback'
 alias music='ncmpcpp'
 alias ping254='ping 192.168.1.254 -i 1 -s1'
 alias note='~/todo.sh'
-alias noscreenoff='xset -dpms && xset s noblank && xset s off'
-#alias info='clear; neofetch'
+alias noscreenoff='xset -dpms; xset s noblank; xset s off'
 alias nfinfo='clear; neofetch'
 alias pl='mpd && mpc pause'
 alias nvv='ncmpcpp --screen visualizer'
 alias nll='ncmpcpp --screen playlist'
 alias cls='clear'
-alias ls='ls -al'
+alias ls='ls -al --color=auto'
+alias ls='dir --color=auto'
 
 
 
@@ -135,13 +132,13 @@ fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
+#if ! shopt -oq posix; then
+#  if [ -f /usr/share/bash-completion/bash_completion ]; then
+#    . /usr/share/bash-completion/bash_completion
+#  elif [ -f /etc/bash_completion ]; then
+#    . /etc/bash_completion
+#  fi
+#fi
 
 # prompt
 #PS1='┌─[\d][\u@\h:\w]\n└─> '
