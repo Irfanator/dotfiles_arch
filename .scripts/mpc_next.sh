@@ -1,2 +1,1 @@
-current=$(mpc current)
-mpc next; notify-send "$current"
+mpc next; sleep 0.1; current=$(mpc current); notify-send "$current"

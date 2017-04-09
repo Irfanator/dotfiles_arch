@@ -4,6 +4,7 @@ mpd_music_dir = "~/Music"
 
 ncmpcpp_directory = "~/.ncmpcpp"
 lyrics_directory = "~/.ncmpcpp/lyrics"
+execute_on_song_change = sh ~/.scripts/song_change.sh
 
 mouse_support = "yes"
 mouse_list_scroll_whole_page = "no"
