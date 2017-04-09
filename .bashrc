@@ -114,7 +114,7 @@ alias nvv='ncmpcpp --screen visualizer'
 alias nll='ncmpcpp --screen playlist'
 alias cls='clear'
 alias ls='ls -al --color=auto'
-alias ls='dir --color=auto'
+alias dir='dir --color=auto'
 
 
 
