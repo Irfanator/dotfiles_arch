@@ -106,32 +106,50 @@ index-sort = true
 wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+pin-workspaces = true
+strip-wsnumbers = true
+fuzzy-match = true
 
 label-mode-padding = 2
 label-mode-foreground = ${colors.foreground}
 label-mode-background = ${colors.background}
 label-focused-underline  = ${colors.foreground}
-; focused = Active workspace on focused monitor
-label-focused = %index%
+; focused = Active workspace on focused monitor, default %index%
+label-focused = %icon%
 label-focused-background = ${colors.background-alt}
 label-focused-foreground = ${colors.foreground-alt}
 label-focused-padding = 2
 
-; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
+; unfocused = Inactive workspace on any monitor, default %index%
+label-unfocused = %icon%
 label-unfocused-padding = 2
 
-; visible = Active workspace on unfocused monitor
-label-visible = %index%
+; visible = Active workspace on unfocused monitor, default %index%
+label-visible = %icon%
 label-visible-background = ${colors.background}
 label-visible-underline = ${colors.foreground}
 label-visible-padding = 2
 
-; urgent = Workspace with urgency hint set
-label-urgent = %index%
+; urgent = Workspace with urgency hint set, default %index%
+label-urgent = %icon%
 label-urgent-background = ${colors.background}
 label-urgent-padding = 2
+
+; custom workspace icons
+ws-icon-0 = 1;一
+ws-icon-1 = 2;ニ
+ws-icon-2 = 3;三
+ws-icon-3 = 4;四
+ws-icon-4 = 5;五
+ws-icon-5 = 6;六
+ws-icon-6 = 7;七
+ws-icon-7 = 8;八
+ws-icon-8 = 9;九
+ws-icon-9 = 10;十
+ws-icon-default = イ
+
+
+
 
 
 [module/mpd]
