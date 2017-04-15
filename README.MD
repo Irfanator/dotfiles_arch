@@ -1,5 +1,5 @@
-[Screenshot 1](https://github.com/Irfanator/dotfiles_arch/blob/master/screenshot.png?raw=true)
-[Screenshot 2](https://github.com/Irfanator/dotfiles_arch/blob/master/screenshot_terminator.png?raw=true)
+![Screenshot 1](https://github.com/Irfanator/dotfiles_arch/blob/master/screenshot.png?raw=true)
+![Screenshot 2](https://github.com/Irfanator/dotfiles_arch/blob/master/screenshot_terminator.png?raw=true)
 
 # A messy dotfiles....
  
